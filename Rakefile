@@ -6,6 +6,8 @@ end
 
 require 'rdoc/task'
 
+
+
 RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = 'PdfGem'
@@ -15,7 +17,6 @@ RDoc::Task.new(:rdoc) do |rdoc|
 end
 
 require 'bundler/gem_tasks'
-
 require 'rake/testtask'
 
 Rake::TestTask.new(:test) do |t|
