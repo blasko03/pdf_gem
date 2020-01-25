@@ -29,7 +29,7 @@ You may need to add
 ```ruby
 Mime::Type.register "application/pdf", :pdf
 ```
-to config/initializers/mime_types.rb
+to `config/initializers/mime_types.rb`
 
 
 ## Usage
@@ -136,6 +136,8 @@ The `format` options are:
 > 1. Script tags inside templates are not evaluated.
 > 2. Page styles are not visible inside templates.
 
+## Contributing
+You are welcome to contribute.
 
 ## License
 The gem is available as open source under the terms of the [Apach e2.0 License](https://opensource.org/licenses/Apache-2.0).
