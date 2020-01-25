@@ -100,8 +100,9 @@ PdfGem.pdf_from_string(options)
 > **NOTE** By default, generates a pdf with modified colors for printing. Use the [`-webkit-print-color-adjust`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-print-color-adjust) property to force rendering of exact colors.
 
 
-Example of working footer:
-```html
+
+> Example of working footer:
+> ```html
 <div id="footer-template" style="font-size:10px !important; color:#808080; padding-left:10px">
   <span class="date"></span>
   <span class="title"></span>
