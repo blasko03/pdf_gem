@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pdf_gem (1.0.0)
+    pdf_gem (1.0.1)
       rails
 
 GEM
@@ -140,4 +140,4 @@ DEPENDENCIES
   sqlite3
 
 BUNDLED WITH
-   2.0.2
+   2.1.2
