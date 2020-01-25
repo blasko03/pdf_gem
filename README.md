@@ -4,6 +4,13 @@ Short description and motivation.
 ## Usage
 How to use my plugin.
 
+## Before installation
+This package depends on node.js and puppeteer run this command:
+
+```bash
+$ npm install -g node puppeteer
+```
+
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -13,7 +20,7 @@ gem 'pdf_gem'
 
 And then execute:
 ```bash
-$ bundle
+$ bundle install
 ```
 
 Or install it yourself as:
