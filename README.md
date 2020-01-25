@@ -136,6 +136,9 @@ The `format` options are:
 > 1. Script tags inside templates are not evaluated.
 > 2. Page styles are not visible inside templates.
 
+## Troubleshooting
+> In development enviroment if the server runs in single thead mode the app will go in deadlock. Youm must run the server in multithread mode.
+
 ## Contributing
 You are welcome to contribute.
 
