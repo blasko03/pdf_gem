@@ -1,31 +1,11 @@
 # PdfGem
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+This is a gem for generating PDF from HTML, and is rendered from Chromium Browser
 
 ## Prerequisites
 This package depends on node.js and puppeteer run this command for installing them:
 
 ```bash
 $ npm install -g node puppeteer
-```
-
-## Usage
-
-### Usage from controller 
-
-```ruby
-class TestController < ApplicationController
-  def show
-    respond_to do |format|
-      format.html
-      format.pdf do
-        render pdf: "template", options #look options section
-      end
-    end
-  end
-end
 ```
 
 ## Installation
@@ -51,9 +31,46 @@ Mime::Type.register "application/pdf", :pdf
 ```
 to config/initializers/mime_types.rb
 
+
+## Usage
+
+### Usage from controller 
+
+```ruby
+class TestController < ApplicationController
+  def show
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "template", options #look options section
+      end
+    end
+  end
+end
+```
+
+### Available lib methods
+
+
+This method generates pdf from url
+
+```ruby
+PdfGem.pdf_from_url(options)
+```
+
+This method generates pdf from html string
+```ruby
+PdfGem.pdf_from_string(options)
+```
+
+
 ## Options
 
 - `options` <[Object]> Options object which might have the following properties:
+  - `url` <[string]> (Use only for PdfGem.pdf_from_url) This is the url to render.
+  - `html` <[string]> (Use only for PdfGem.pdf_from_string) This is the html string to render.
+  - `disposition` <[string]> (Use only for controller render) Disposition string (inline/attachment).
+  - `filename` <[string]> (Use only for controller render) Filename of the file.
   - `destination` <[string]> The file path to save the PDF to. If no destination is provided, will be returned a binary string
   - `scale` <[number]> Scale of the webpage rendering. Defaults to `1`. Scale amount must be between 0.1 and 2.
   - `displayHeaderFooter` <[boolean]> Display header and footer. Defaults to `false`.
@@ -82,6 +99,18 @@ to config/initializers/mime_types.rb
 
 > **NOTE** By default, generates a pdf with modified colors for printing. Use the [`-webkit-print-color-adjust`](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-print-color-adjust) property to force rendering of exact colors.
 
+
+
+> Example of working footer template:
+```html
+<div id="footer-template" style="font-size:10px !important; color:#808080; padding-left:10px">
+  <span class="date"></span>
+  <span class="title"></span>
+  <span class="url"></span>
+  <span class="pageNumber"></span>
+  <span class="totalPages"></span>
+</div>
+```
 
 The `width`, `height`, and `margin` options accept values labeled with units. Unlabeled values are treated as pixels.
 
