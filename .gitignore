@@ -75,3 +75,4 @@ yarn-debug.log*
 /test/test_files/results/
 /test/dummy/log/test.log
 .ruby-version
+Gemfile.lock

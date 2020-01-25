@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email       = ["blzk100@gmailcom"]
   spec.homepage    = "https://github.com/blasko03/pdf_gem"
   spec.summary     = "Gem for creating pdf from html"
-  spec.description = "Gem based on chrome browser"
+  spec.description = "This is a gem for converting HTML in PDF, the rendering engine is Chromium Browser"
   spec.license     = "Apache-2.0"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
