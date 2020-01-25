@@ -5,7 +5,7 @@ Short description and motivation.
 How to use my plugin.
 
 ## Prerequisites
-This package depends on node.js and puppeteer run this command:
+This package depends on node.js and puppeteer run this command for installing them:
 
 ```bash
 $ npm install -g node puppeteer
