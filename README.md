@@ -101,7 +101,7 @@ PdfGem.pdf_from_string(options)
 
 
 
-> Example of working footer:
+> Example of working footer template:
 ```html
 <div id="footer-template" style="font-size:10px !important; color:#808080; padding-left:10px">
   <span class="date"></span>
