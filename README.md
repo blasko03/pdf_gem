@@ -52,10 +52,26 @@ class TestController < ApplicationController
 end
 ```
 
+### Available lib methods
+
+
+This method generates pdf from url
+
+```ruby
+PdfGem.pdf_from_url(options)
+```
+
+This method generates pdf from html string
+```ruby
+PdfGem.pdf_from_string(options)
+```
+
 
 ## Options
 
 - `options` <[Object]> Options object which might have the following properties:
+  - `url` <[string]> (Use only for PdfGem.pdf_from_url) This is the url to render.
+  - `html` <[string]> (Use only for PdfGem.pdf_from_string) This is the html string to render.
   - `destination` <[string]> The file path to save the PDF to. If no destination is provided, will be returned a binary string
   - `scale` <[number]> Scale of the webpage rendering. Defaults to `1`. Scale amount must be between 0.1 and 2.
   - `displayHeaderFooter` <[boolean]> Display header and footer. Defaults to `false`.
