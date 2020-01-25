@@ -71,3 +71,6 @@ yarn-debug.log*
 ._.DS_Store
 ._*
 /pkg
+/lib/tmp/
+/test/test_files/results/
+/test/dummy/log/test.log
