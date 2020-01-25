@@ -1,5 +1,5 @@
 # PdfGem
-Short description and motivation.
+This is a gem for generating PDF from HTML, and is rendered from Chromium Browser
 
 ## Usage
 How to use my plugin.
