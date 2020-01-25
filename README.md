@@ -49,6 +49,8 @@ class TestController < ApplicationController
 end
 ```
 
+> **NOTE** If your layout include other refernces like images, css or javascript you must provide the absolute path to the files
+
 ### Available lib methods
 
 
