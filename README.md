@@ -13,7 +13,20 @@ $ npm install -g node puppeteer
 
 ## Usage
 
+### Usage from controller 
 
+```ruby
+class TestController < ApplicationController
+  def show
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "template", options #look options section
+      end
+    end
+  end
+end
+```
 
 ## Installation
 Add this line to your application's Gemfile:
