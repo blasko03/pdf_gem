@@ -4,7 +4,7 @@ Short description and motivation.
 ## Usage
 How to use my plugin.
 
-## Before installation
+## Prerequisites
 This package depends on node.js and puppeteer run this command:
 
 ```bash
