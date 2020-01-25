@@ -1,5 +1,5 @@
 module PdfGem 
-  ActionController::Renderers.add :pdf2 do |template, options|
+  ActionController::Renderers.add :pdf do |template, options|
     params = options.except(:prefixes, :template)
     params[:html] = render_to_string(template.present? ? template : options.template)
     send_data PdfGem::pdf_from_string(params), type: Mime[:pdf],  disposition: "attachment; filename=#{options[:filename]}"
