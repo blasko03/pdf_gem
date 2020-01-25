@@ -49,7 +49,7 @@ class TestController < ApplicationController
 end
 ```
 
-> **NOTE** If your layout include other refernces like images, css or javascript you must provide the absolute path to the files, ioy can set config.action_controller.asset_host = "assets.example.com" in that way rails will include the full path for assets, more on https://apidock.com/rails/v6.0.0/ActionView/Helpers/AssetUrlHelper
+> **NOTE** If your layout include other refernces like images, css or javascript you must provide the absolute path to the files, you can set config.action_controller.asset_host = "assets.example.com" in that way rails will include the full path for assets, more on https://apidock.com/rails/v6.0.0/ActionView/Helpers/AssetUrlHelper
 
 ### Available lib methods
 
