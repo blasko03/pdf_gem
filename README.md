@@ -1,9 +1,6 @@
 # PdfGem
 This is a gem for generating PDF from HTML, and is rendered from Chromium Browser
 
-## Usage
-How to use my plugin.
-
 ## Prerequisites
 This package depends on node.js and puppeteer run this command for installing them:
 
