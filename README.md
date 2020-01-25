@@ -11,6 +11,10 @@ This package depends on node.js and puppeteer run this command for installing th
 $ npm install -g node puppeteer
 ```
 
+## Usage
+
+
+
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -67,11 +71,6 @@ to config/initializers/mime_types.rb
 
 
 The `width`, `height`, and `margin` options accept values labeled with units. Unlabeled values are treated as pixels.
-
-A few examples:
-- `page.pdf({width: 100})` - prints with width set to 100 pixels
-- `page.pdf({width: '100px'})` - prints with width set to 100 pixels
-- `page.pdf({width: '10cm'})` - prints with width set to 10 centimeters.
 
 All possible units are:
 - `px` - pixel
