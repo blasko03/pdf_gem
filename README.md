@@ -11,23 +11,6 @@ This package depends on node.js and puppeteer run this command for installing th
 $ npm install -g node puppeteer
 ```
 
-## Usage
-
-### Usage from controller 
-
-```ruby
-class TestController < ApplicationController
-  def show
-    respond_to do |format|
-      format.html
-      format.pdf do
-        render pdf: "template", options #look options section
-      end
-    end
-  end
-end
-```
-
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -50,6 +33,25 @@ You may need to add
 Mime::Type.register "application/pdf", :pdf
 ```
 to config/initializers/mime_types.rb
+
+
+## Usage
+
+### Usage from controller 
+
+```ruby
+class TestController < ApplicationController
+  def show
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "template", options #look options section
+      end
+    end
+  end
+end
+```
+
 
 ## Options
 
