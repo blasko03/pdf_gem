@@ -1,5 +1,5 @@
 require 'test_helper'
-
+require 'open-uri'
 class PdfGem::Test < ActiveSupport::TestCase
   test "truth" do
     assert_kind_of Module, PdfGem
@@ -28,13 +28,15 @@ class PdfGem::Test < ActiveSupport::TestCase
       f.write(Base64.decode64(data))
     end
   end
+
+  def save_to_file(destination, data)   
+    File.open(destination, "wb") do |f|
+      f.write(data)
+    end
+  end
   
-  test "is_saving_file" do
-    input = File.join(File.dirname(__FILE__), 'test_files', 'test.pdf')
-    copy = File.join(File.dirname(__FILE__), 'test_files', 'results', 'copy.pdf')
-    File.delete(copy) if File.exist?(copy)
-    PdfGem::save_to_file(copy, Base64.encode64(IO.binread(input)))
-    assert File.exist?(copy)
-    assert FileUtils.compare_file(input, copy)  
+  test "is_saving_file_from_binary" do
+    bin = File.join(File.dirname(__FILE__), 'test_files', 'results', 'bin.pdf')   
+    save_to_file(bin, PdfGem::pdf_from_string({html: URI.open('https://en.wikipedia.org/wiki/Car').read})) 
   end
 end
