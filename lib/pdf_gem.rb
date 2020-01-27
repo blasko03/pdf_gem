@@ -16,7 +16,7 @@ module PdfGem
       end
     else
       raise stderr.present? ? stderr : "error"
-    end 
+    end
   end
 
   def self.pdf_from_string(params)
