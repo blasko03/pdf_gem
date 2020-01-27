@@ -138,7 +138,7 @@ The `format` options are:
 > 2. Page styles are not visible inside templates.
 
 ## Troubleshooting
-In development enviroment if the server runs in single thead mode the app will go in deadlock. Youm must run the server in multithread mode.
+In development enviroment if the server runs in single thead mode the app will go in deadlock. Youm must run the server in multithread mode. If you use puma as dev server you can start the server with `puma -w 3`
 
 ## Contributing
 You are welcome to contribute.
