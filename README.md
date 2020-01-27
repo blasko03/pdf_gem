@@ -25,15 +25,6 @@ Or install it yourself as:
 $ gem install pdf_gem
 ```
 
-Add this lines to `application.rb`
-```ruby
-ActionController::Renderers.add :pdf do |template, options|
-  PdfGem.renderer(template, options)
-end
-```
-> **NOTE** You can change the :pdf in some other name if you have conflicts with other similar libraries
-
-
 You may need to add 
 ```ruby
 Mime::Type.register "application/pdf", :pdf
