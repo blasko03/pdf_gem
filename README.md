@@ -70,6 +70,7 @@ PdfGem.pdf_from_string(options)
 
 - `options` <[Object]> Options object which might have the following properties:
   - `url` <[string]> (Used only for PdfGem.pdf_from_url) This is the url to render.
+  - `timeout` <[number]> Maximum navigation time in ms, default is 3000 ms.
   - `html` <[string]> (Used only for PdfGem.pdf_from_string) This is the html string to render.
   - `disposition` <[string]> (Use only for controller render) Disposition string (inline/attachment).
   - `formats` <[string]> (Use only for controller render) Force to load view of a particular format (pdf, html, xml).
