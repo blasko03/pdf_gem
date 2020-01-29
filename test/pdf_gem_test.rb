@@ -25,12 +25,6 @@ class PdfGem::Test < ActiveSupport::TestCase
 
   def save_to_file(destination, data)   
     File.open(destination, "wb") do |f|
-      f.write(Base64.decode64(data))
-    end
-  end
-
-  def save_to_file(destination, data)   
-    File.open(destination, "wb") do |f|
       f.write(data)
     end
   end
