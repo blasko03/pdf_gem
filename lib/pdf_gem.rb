@@ -26,7 +26,7 @@ module PdfGem
     File.open(html_file, "w+") do |f|        
       f.write(params[:html])
     end
-    params[:url] = "file:#{html_file}"
+    params[:url] = "file://#{html_file}"
     result = self.pdf_from_url(params)
     File.delete(html_file) if File.exist?(html_file)
     return result
