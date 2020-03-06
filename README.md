@@ -76,7 +76,7 @@ PdfGem.pdf_from_string(options)
     - `domcontentloaded` - consider navigation to be finished when the `DOMContentLoaded` event is fired.
     - `networkidle0` - consider navigation to be finished when there are no more than 0 network connections for at least `500` ms.
     - `networkidle2` - consider navigation to be finished when there are no more than 2 network connections for at least `500` ms.
-  - `cookies` <[Array]>
+  - `cookies` <[Array]> set cookie in browser session
     - `name` <[string]> required
     - `value` <[string]> required
     - `url` <[string]>
