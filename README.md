@@ -69,7 +69,8 @@ PdfGem.pdf_from_string(options)
 ## Options
 
 - `options` <[Object]> Options object which might have the following properties:
-  - `url` <[string]> (Used only for PdfGem.pdf_from_url) This is the url to render.
+  - `url` <[string]> (Used only for PdfGem.pdf_from_url) This is the url to render. 
+  - `html` <[string]> (Used only for PdfGem.pdf_from_string) This is the html string to render.
   - `timeout` <[number]> Maximum navigation time in ms, default is 3000 ms.
   - `waitUntil` <[string]|[Array]<[string]>> When to consider navigation succeeded, defaults to `load`. Given an array of event strings, navigation is considered to be successful after all events have been fired. Events can be either:
     - `load` - consider navigation to be finished when the `load` event is fired.
@@ -86,7 +87,6 @@ PdfGem.pdf_from_string(options)
     - `httpOnly` <[boolean]>
     - `secure` <[boolean]>
     - `sameSite` <["Strict"|"Lax"]>
-  - `html` <[string]> (Used only for PdfGem.pdf_from_string) This is the html string to render.
   - `disposition` <[string]> (Use only for controller render) Disposition string (inline/attachment).
   - `formats` <[string]> (Use only for controller render) Force to load view of a particular format (pdf, html, xml).
   - `filename` <[string]> (Use only for controller render) Filename of the file.
