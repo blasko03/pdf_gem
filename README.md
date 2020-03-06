@@ -76,16 +76,16 @@ PdfGem.pdf_from_string(options)
     - `domcontentloaded` - consider navigation to be finished when the `DOMContentLoaded` event is fired.
     - `networkidle0` - consider navigation to be finished when there are no more than 0 network connections for at least `500` ms.
     - `networkidle2` - consider navigation to be finished when there are no more than 2 network connections for at least `500` ms.
-  - `.cookies` <Array>:
-    - `name` <string> required
-    - `value` <string> required
-    - `url` <string>
-    - `domain` <string>
-    - `path` <string>
-    - `expires` <number> Unix time in seconds.
-    - `httpOnly` <boolean>
-    - `secure` <boolean>
-    - `sameSite` <"Strict"|"Lax">
+  - `cookies` <[Array]>
+    - `name` <[string]> required
+    - `value` <[string]> required
+    - `url` <[string]>
+    - `domain` <[string]>
+    - `path` <[string]>
+    - `expires` <[number]> Unix time in seconds.
+    - `httpOnly` <[boolean]>
+    - `secure` <[boolean]>
+    - `sameSite` <["Strict"|"Lax"]>
   - `html` <[string]> (Used only for PdfGem.pdf_from_string) This is the html string to render.
   - `disposition` <[string]> (Use only for controller render) Disposition string (inline/attachment).
   - `formats` <[string]> (Use only for controller render) Force to load view of a particular format (pdf, html, xml).
