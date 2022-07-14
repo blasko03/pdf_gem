@@ -20,7 +20,7 @@ module PdfGem
   end
 
   def self.pdf_from_string(params)
-    tmp = File.join(File.dirname(__FILE__), 'tmp')
+    tmp = File.join('/', 'tmp')
     Dir.mkdir(tmp) unless File.exist?(tmp)
     html_file = File.join(tmp, "#{rand(36**40).to_s(36)}.html")   
     File.open(html_file, "w+") do |f|        
